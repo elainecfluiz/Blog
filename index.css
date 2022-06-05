@@ -70,8 +70,12 @@ section{
     background-color: rgb(70, 124, 206);
     border-top: 2px solid #000000;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+}
+
+#trabalho img{
+    height: 100%;
 }
 
 h2{
@@ -130,6 +134,8 @@ h2{
 
 footer{
     background-color: rgb(70, 124, 206);
-    background-image: url("./recursos/escola/brasao.jpeg");
-    background-size: contain;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
