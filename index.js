@@ -3,7 +3,15 @@ const setaLeft = document.getElementById("setaLeft");
 
 const artigos = document.getElementsByClassName("artigo")
 
+const videos = document.getElementsByClassName("pause");
+
 let flag_Artigo = 0;
+
+function pauseVideo(){
+    for(i = 0; i < videos.length; i++){
+        videos[0].pause();
+    }
+}
 
 function exibirArtigos(){
     if(flag_Artigo < (artigos.length)){
@@ -30,12 +38,14 @@ function decrementando_Flag_Artigo(){
 
 setaRight.addEventListener("click", function (){
     incrementando_Flag_Artigo();
-    exibirArtigos()
+    exibirArtigos();
+    pauseVideo();
 });
 
 setaLeft.addEventListener("click", function (){
     decrementando_Flag_Artigo();
     exibirArtigos()
+    pauseVideo();
 });
 
 exibirArtigos();
