@@ -81,6 +81,7 @@ section{
 h2{
     margin: 0;
     word-spacing: 25px;
+    text-align: center;
 }
 
 #principal{
@@ -118,6 +119,16 @@ h2{
 
 .artigo img{
     width: 100%;
+}
+
+#media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video{
+    width: 90%;
 }
 
 #setaLeft{
